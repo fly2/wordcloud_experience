@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import random
 from os import path
-#得到地址
+#得到路径
 d = path.dirname('.')
 #定义色系,此处为灰色系
 def grey_color_func(word, font_size, position, orientation, random_state=None, **kwargs):
@@ -44,7 +44,7 @@ def get_wc(text,name):
         n=n+1
     df.to_excel('/home/weblogic/DATA/private/shangguanxf/cc_bigdata/create/词云/'+name+'.xlsx',sheet_name='Sheet1')
     '''
-    #用词频画图 f应为字典(key为词，value为词频)的list格式（list（dic.items()））
+    #用词频画图 f应为字典(key为词，value为词频)dict(dic.items())。如果无效可以自行进行排序sorted_text = sorted(text.items(), key=lambda x:x[1],  reverse = True )
     #wc.generate_from_frequencies(text)
     # 从背景图片生成颜色值
     image_colors = ImageColorGenerator(back_coloring)
