@@ -50,6 +50,7 @@ def get_wc(text,name):
     image_colors = ImageColorGenerator(back_coloring)
     # 以下代码显示图片
     plt.imshow(wc)
+    #关闭边框
     plt.axis("off")
 
     '''
