@@ -16,7 +16,7 @@ def get_wc(text,name):
     #text = open('./.txt', 'r', encoding='utf-8').read()
     #backgroud_Image = plt.imread('./picture/colored_3.png')
     #plt.imread图片只支持.jpg格式
-    back_coloring = plt.imread('.picture/cloud.jpg')
+    back_coloring = plt.imread('./picture/cloud.jpg')
     #github原版获取图片方法,可获取.png格式
     #back_coloring = np.array(Image.open('/home/weblogic/CODE/shangguan/wordcloud-master/image/alice_color.png'))
     '''
