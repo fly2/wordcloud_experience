@@ -44,7 +44,8 @@ def get_wc(text,name):
         n=n+1
     df.to_excel('/home/weblogic/DATA/private/shangguanxf/cc_bigdata/create/词云/'+name+'.xlsx',sheet_name='Sheet1')
     '''
-    #用词频画图 f应为字典(key为词，value为词频)dict(dic.items())或list(dic.items())。
+    #用词频画图 text应为字典(key为词，value为词频)dict(dic.items())或list(dic.items())。
+    #用词频画图时，需自行按照需要输出词数进行输入。
     #内部有排序，但不清楚为什么没起作用，可以自行进行排序sorted_text = sorted(text.items(), key=lambda x:x[1],  reverse = True )
     #wc.generate_from_frequencies(text)
     # 从背景图片生成颜色值
